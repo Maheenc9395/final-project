@@ -1,0 +1,365 @@
+/* https://css-tricks.com/how-to-create-neon-text-with-css/ */
+/* https://codepen.io/yuhomyan/pen/GRobbXB */
+
+
+.content {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  color:white;
+  text-align:center;
+}
+
+.img{
+
+  text-align:center;
+}
+.question {
+  font-size:30px;
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  text-align:center;
+}
+.choices {
+  margin-top: 10px;
+  color:white;
+  text-align:center;
+}
+.choice {
+  margin: 5px 0;
+  color:white;
+  text-align:center;
+}
+
+
+
+#liveclock{
+  font-size:30px;
+  text-align:center;
+}
+
+#start-game{
+  background: rgb(210, 131, 226);
+color: #fff;
+border: none;
+padding: 10px 30px;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+text-align:center;
+padding: 20px 20px;
+display: inline-block;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-decoration: none;
+overflow: hidden;
+color: #111;
+background: #ff95fa;
+box-shadow: 0 0 50px #eb7ff5;
+font-family:"karla";
+border: none;
+background-color: #ff9aff;
+box-shadow: 0 0 5px #ef97e8;
+
+}
+
+
+#start-game:hover{
+  box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+}
+
+.easy{
+  background: rgb(210, 131, 226);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align:center;
+  padding: 20px 20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  color: #111;
+  background: #ff95fa;
+  box-shadow: 0 0 50px #eb7ff5;
+  font-family:"karla";
+  border: none;
+  background-color: #ff9aff;
+  box-shadow: 0 0 5px #ef97e8;
+  
+
+}
+#button{
+  background: rgb(210, 131, 226);
+color: #fff;
+border: none;
+padding: 10px 30px;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+text-align:center;
+padding: 20px 20px;
+display: inline-block;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-decoration: none;
+overflow: hidden;
+color: #111;
+background: #ff95fa;
+box-shadow: 0 0 50px #eb7ff5;
+font-family:"karla";
+border: none;
+background-color: #ff9aff;
+box-shadow: 0 0 5px #ef97e8;
+
+
+}
+
+
+#button:hover{
+  box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+}
+
+
+#correct{
+  background: rgb(210, 131, 226);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align:center;
+  padding: 20px 20px;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  color: #111;
+  background: #e969e2;
+  box-shadow: 0 0 50px #e976f3;
+  font-family:"karla";
+
+  border: none;
+  background-color: #ff9aff;
+  box-shadow: 0 0 5px #ef97e8;
+
+}
+
+
+#correct:hover{
+  box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+}
+
+
+
+
+
+#quiz{
+  font-size:45px;
+  text-align:center;
+  color: #fff;
+
+}
+
+
+#name{
+color:rgb(255, 255, 255);
+text-align:center;
+animation: pulsate 2.5s infinite alternate;     
+font-size:25px;
+font-family:"karla";
+text-shadow:
+0 0 4px #fff,
+0 0 11px #fff,
+0 0 19px #fff,
+0 0 40px rgb(135, 2, 161),
+0 0 80px rgb(136, 8, 153),
+0 0 90px rgb(210, 29, 255),
+0 0 100px rgb(236, 30, 255),
+0 0 150px rgb(220, 43, 255);
+
+}
+
+
+
+#liveclock{
+  color:white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#demo{
+  font-size:22px;
+  text-align:center;
+  color:white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+@media screen and (min-width: 1000px){
+  .question{
+    max-width:5000px;
+    padding: 0px 20px;
+    
+  }
+}
+
+
+
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+#quiz {
+  font-size: 4.2rem;    
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(101, 127, 245),
+      0 0 80px rgb(51, 15, 255),
+      0 0 90px rgb(55, 20, 255),
+      0 0 100px rgb(27, 11, 255),
+      0 0 150px rgb(77, 6, 255);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
+/* Additional styling */
+  
+h2 {
+ font-size: 1.8rem;
+}
+.container {
+  margin-top: 20vh;
+}
+
+body {
+  font-size: 18px;
+ background-color:black;
+
+}  
+
+#quiz{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family:"karla";
+}
+
+#quiz {
+  animation: flicker 1.5s infinite alternate;     
+}
+
+
+
+
+
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+  
+  #bars {
+  background: black;
+  width: 500px;
+  height: 150px;
+  margin: 30px 0px 0px 0px;
+  
+  }
+  
+  .difftext {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  color:white;
+  
+  }
+  
+  .diffbar {
+  background: lightgrey;
+  width: 300px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+ 
+  }
+  
+  
+  .difflvl {
+  position: relative;
+  right: 290px;
+  width: 300px;
+  height: 30px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-transition: right 3s, background 3s;
+  -moz-transition: right 3s, background 3s;
+  -0-transition: right 3s, background 3s;
+  transition: right 3s, background 3s;
+  }
+  
+  .diffbar:hover .difflvl {
+  right: 0px;
+  
+  }
+  
+  .diffbar #lvl-1:target {
+  background: green;
+  right: 90%;
+  }
+  
+  .diffbar #lvl-2:target {
+  background: aqua;
+  right: 75%;
+  }
+  
+  .diffbar #lvl-3:target {
+  background: violet;
+  right: 50%;
+  }
+  
+  .diffbar #lvl-4:target {
+  background: orange;
+  right: 25%;
+  }
+  
+  .diffbar #lvl-5:target {
+  background: red;
+  right: 10%;
+  }
+  
+  a { margin: 5px }
+
