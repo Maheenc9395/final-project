@@ -138,7 +138,7 @@ async function fetchPexelsData(search) {
                 const response = await fetch(url, { headers });
         
                 if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
+                    throw new Error(`HTTPS error! Status: ${response.status}`);
                 }
         
                 const data = await response.json();
