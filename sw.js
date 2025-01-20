@@ -21,6 +21,7 @@ const DYNAMIC_CACHE_NAME = 'my-app-dynamic-cache-v2';
 // Files to cache during install
 const STATIC_ASSETS = [
 '/', 
+'/sw.js',
 '/index.html',
 '/style.css',
 '/index.js',
@@ -37,7 +38,11 @@ const STATIC_ASSETS = [
 '/https://opentdb.com/api.php?amount=10&difficulty=medium',
 '/https://opentdb.com/api.php?amount=10&difficulty=hard',
 '/https://api.pexels.com/v1/search?per_page=1&query=',
-
+'/screenshot2.png',
+'/screenshot1.png',
+'/quizicon1.png',
+'/icon512_rounded.png',
+'/icon512_maskable.png',
 // Add other static files you want to cache
 ];
 
