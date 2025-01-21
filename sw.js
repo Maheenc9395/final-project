@@ -29,6 +29,7 @@ const STATIC_ASSETS = [
 '/questions.json',
 '/icons.json',
 '/Oliver-Tray-Pineapple.ogg',
+'/Oliver-Tray-Pineapple.wav',
 '/screenshots',
 '/icons',
 '/android',
@@ -48,14 +49,14 @@ const STATIC_ASSETS = [
 ];
 
 // Install event: Cache static assets
-self.addEventListener('install', event => {
-event.waitUntil(
-  caches.open(CACHE_NAME).then(cache => {
-    console.log('Opened cache');
-    return cache.addAll(STATIC_ASSETS);
-  })
-);
-});
+// self.addEventListener('install', event => {
+// event.waitUntil(
+//   caches.open(CACHE_NAME).then(cache => {
+//     console.log('Opened cache');
+//     return cache.addAll(STATIC_ASSETS);
+//   })
+// );
+// });
 
 // Activate event: Clean up old caches
 self.addEventListener('activate', event => {
