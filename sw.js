@@ -43,6 +43,7 @@ const STATIC_ASSETS = [
 '/quizicon1.png',
 '/icon512_rounded.png',
 '/icon512_maskable.png',
+
 // Add other static files you want to cache
 ];
 
