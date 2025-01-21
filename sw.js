@@ -37,6 +37,7 @@ const STATIC_ASSETS = [
 '/https://opentdb.com/api.php?amount=10&difficulty=hard',
 '/https://api.pexels.com/v1/search?per_page=1&query=',
 '/https://www.pexels.com/',
+'/https://opentdb.com/api_config.php',
 '/screenshot2.png',
 '/screenshot1.png',
 '/quizicon1.png',
