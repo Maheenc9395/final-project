@@ -7,7 +7,7 @@
     <title>QUIZ GAME!</title>
     
     <!-- include an external style sheet -->
-    <link rel="stylesheet" href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >  
+    <link rel="stylesheet" href="style.css"  >  
     <link rel="manifest" href="manifest.json">
     <link rel="icons" href="icons.json">
     <!-- include an external JavaScript file -->
@@ -15,17 +15,17 @@
     <script src="sw.js"></script>
   </head>
   
-  <body>
+  <body onload="startTimer()">
 <button id="installButton" style="display: none;">Install App</button>
 
     <audio id="myAudio" controls>
-      <source src="Oliver-Tray-Pineapple.ogg" alt="video" type="audio/ogg">
-      <source src="Oliver Tray - Pineapple.wav" alt="video" type="audio/wav">
+      <source src="Oliver-Tray-Pineapple.ogg" type="audio/ogg">
+      <source src="Oliver Tray - Pineapple.wav"  type="audio/wav">
     </audio>
     
 
 
-    <body onload="startTimer()">
+   
    <h1 id="quiz">Quiz Game!</h1>
    <h3 id="name">By:Maheen C.</h3>
    <p id="liveclock">Live clock:</p>
@@ -35,12 +35,7 @@
 
       
 
-      <div id="lvl-3" class="difflvl lvl-3"></div>
-      <div id="lvl-4" class="difflvl lvl-4"></div>
-      <div id="lvl-5" class="difflvl lvl-5"></div>
-    </div>
-</div>
-
+ 
 
    <!-- <button onclick="stopTimer()" id="stop">Stop time</button>
    <button onclick="startTimer()" id="start">Start time</button> -->
@@ -48,7 +43,7 @@
    
   <div class="content">
     
-    <select id="difficulty">
+    <select id="easy">
       <option id="easy" value="easy">Easy</option>
       <option id="medium" value="medium">Medium</option>
       <option id="hard" value="hard">Hard</option>
