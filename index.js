@@ -27,6 +27,12 @@ window.addEventListener('beforeinstallprompt', (e) => {
 const EasyURL = "https://opentdb.com/api.php?amount=10&difficulty=easy";
 const MediumURL = "https://opentdb.com/api.php?amount=10&difficulty=medium";
 const HardURL = "https://opentdb.com/api.php?amount=10&difficulty=hard";
+//CATORGORIES//
+// const apiAnimalURL = "https://opentdb.com/api.php?amount=10&category=27";
+// const celebrities https://opentdb.com/api.php?amount=10&category=27";
+//const history "https://opentdb.com/api.php?amount=10&category=23";
+//const tv shows "https://opentdb.com/api.php?amount=10&category=14";
+//const general knowledge "https://opentdb.com/api.php?amount=10&category=9";
 
 let triviaURL;
 let currentImage;
@@ -183,6 +189,6 @@ function answerQuestion(correctAnswer) {
     // Your code to handle question answering
     displayNewImage(correctAnswer);
 }
-
 // Initial image display
+
 
