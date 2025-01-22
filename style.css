@@ -344,48 +344,5 @@ body {
   }
   
   
-  .difflvl {
-  position: relative;
-  right: 290px;
-  width: 300px;
-  height: 30px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  -webkit-transition: right 3s, background 3s;
-  -moz-transition: right 3s, background 3s;
-  -0-transition: right 3s, background 3s;
-  transition: right 3s, background 3s;
-  }
-  
-  .diffbar:hover .difflvl {
-  right: 0px;
-  
-  }
-  
-  .diffbar #lvl-1:target {
-  background: green;
-  right: 90%;
-  }
-  
-  .diffbar #lvl-2:target {
-  background: aqua;
-  right: 75%;
-  }
-  
-  .diffbar #lvl-3:target {
-  background: violet;
-  right: 50%;
-  }
-  
-  .diffbar #lvl-4:target {
-  background: orange;
-  right: 25%;
-  }
-  
-  .diffbar #lvl-5:target {
-  background: red;
-  right: 10%;
-  }
-  
-  a { margin: 5px }
 
+  
