@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>QUIZ GAME!</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >  
+    <link rel="manifest" href="manifest.json">
+    <link rel="icons" href="icons.json">
+    <!-- include an external JavaScript file -->
+    <script src="index (1).html"></script>
+    <script src="sw.js"></script>
+  </head>
+  
+  <body>
+<button id="installButton" style="display: none;">Install App</button>
+
+    <audio id="myAudio" controls>
+      <source src="Oliver-Tray-Pineapple.ogg" alt="video" type="audio/ogg">
+      <source src="Oliver Tray - Pineapple.wav" alt="video" type="audio/wav">
+    </audio>
+    
+
+
+    <body onload="startTimer()">
+   <h1 id="quiz">Quiz Game!</h1>
+   <h3 id="name">By:Maheen C.</h3>
+   <p id="liveclock">Live clock:</p>
+   <p id="demo"></p>
+  
+<br><br>
+   <div id="bars">
+    <div class="difftext">Difficulty Level:
+
+    </div>
+    <div class="diffbar">
+      
+
+      <div id="lvl-3" class="difflvl lvl-3"></div>
+      <div id="lvl-4" class="difflvl lvl-4"></div>
+      <div id="lvl-5" class="difflvl lvl-5"></div>
+    </div>
+</div>
+
+  <div>
+    <a id="button" href="#lvl-3">Easy</a>
+    <a id="button" href="#lvl-4">Medium</a>
+    <a id="button" href="#lvl-5">Hard</a>
+  </div>
+
+
+   <!-- <button onclick="stopTimer()" id="stop">Stop time</button>
+   <button onclick="startTimer()" id="start">Start time</button> -->
+<br><br>
+   
+  <div class="content">
+    <br><br>
+    <select id="difficulty">
+      <option id="easy" value="easy">Easy</option>
+      <option id="medium" value="medium">Medium</option>
+      <option id="hard" value="hard">Hard</option>
+  </select>
+  <button id="start-game" onclick="startGame()">Start Game</button>
+  <div id="trivia-container"></div>
+  <div id="demo"></div>
+
+    <br>
+     
+
+  </body>
+  
+</html>
