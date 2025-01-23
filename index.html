@@ -24,11 +24,10 @@
 
     <body onload="startTimer()">
    <h1 id="quiz">Quiz Game!</h1>
-   <h3 id="name">By:Maheen C.</h3>
    <p id="liveclock">Live clock:</p>
    <p id="demo"></p>
   
-
+ 
 
    
       
@@ -37,13 +36,49 @@
    
   <div class="content">
     <br><br>
-    <select id="easy">
+    <select id="levels">
       <option id="easy" value="easy">Easy</option>
       <option id="medium" value="medium">Medium</option>
       <option id="hard" value="hard">Hard</option>
   </select>
 
   
+
+
+
+
+
+
+  <select id="catagories">
+    <option id="Animal" value="Animals">Animals</option>
+    <option id="Anime" value="Animae">Anime</option>
+    <option id="Cartoon" value="Cartoons">Cartoons & Animation</option>
+
+    <option id="Celebrities" value="Celebrities">Celebrities</option>
+    <option id="Nature" value="Nature">Nature and Science</option>
+    <option id="Comic" value="Comics">Comics</option>
+
+
+      <option id="Video Game" value="Video Game">Video Games</option>
+      <option id="Music" value="Music">Music</option>
+      <option id="Book" value="books">books</option>
+
+      <option id="General" value="Genral Knowledge">Genral Knowledge</option>
+      <option id="Computers" value="Computers">Computers</option>
+      <option id="Math" value="Math">Math</option>
+
+
+
+    </option>
+    
+</select>
+
+
+
+
+
+
+
   <button id="start-game" onclick="startGame()">Start Game</button>
   <div id="trivia-container"></div>
   <div id="demo"></div>

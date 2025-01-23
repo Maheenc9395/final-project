@@ -29,6 +29,22 @@ const MediumURL = "https://opentdb.com/api.php?amount=10&difficulty=medium";
 const HardURL = "https://opentdb.com/api.php?amount=10&difficulty=hard";
 
 
+
+const animalURL = "https://opentdb.com/api.php?amount=10&category=27";
+const animeURL = "https://opentdb.com/api.php?amount=10&category=31";
+const cartoonURL = "https://opentdb.com/api.php?amount=10&category=32";
+const celebritiesURL = "https://opentdb.com/api.php?amount=10&category=26";
+const natureURL = "https://opentdb.com/api.php?amount=10&category=17";
+const comicURL = "https://opentdb.com/api.php?amount=10&category=29";
+const videogameURL = "https://opentdb.com/api.php?amount=10&category=15";
+const musicURL = "https://opentdb.com/api.php?amount=10&category=12";
+const bookURL = "https://opentdb.com/api.php?amount=10&category=10";
+const generalknowledgeURL = "https://opentdb.com/api.php?amount=10&category=9";
+const computerURL = "https://opentdb.com/api.php?amount=10&category=18";
+const mathURL = "https://opentdb.com/api.php?amount=10&category=19";
+
+
+
 let triviaURL;
 let currentImage;
 
@@ -38,7 +54,7 @@ var myVar;
 
 // Function to start the game
 function startGame() {
-    const difficulty = document.getElementById('easy').value;
+    const difficulty = document.getElementById('levels').value;
     switch (difficulty) {
         case 'easy':
             triviaURL = EasyURL;
@@ -49,6 +65,74 @@ function startGame() {
         case 'hard':
             triviaURL = HardURL;
             break;
+
+
+            
+    }
+
+
+    const catagories = document.getElementById('catagories').value;
+    switch (catagories) {
+
+        case 'easy':
+            triviaURL = EasyURL;
+            break;
+        case 'medium':
+            triviaURL = MediumURL;
+            break;
+        case 'hard':
+            triviaURL = HardURL;
+            break;
+
+            
+        case 'Animal':
+            triviaURL = animalURL;
+            break;
+        case 'Anime':
+            triviaURL = animeURL;
+            break;
+        case 'Cartoon':
+            triviaURL = cartoonURL;
+            break;
+
+
+
+            case 'Celebrities':
+                triviaURL = celebritiesURL;
+                break;
+            case 'Nature':
+                triviaURL = natureURL;
+                break;
+            case 'Comic':
+                triviaURL = comicURL;
+                break;
+
+
+
+
+
+
+                case 'Video Game':
+                    triviaURL = videogameURL;
+                    break;
+                case 'Music':
+                    triviaURL = musicURL;
+                    break;
+                case 'Book':
+                    triviaURL = bookURL;
+                    break;
+
+
+
+                    case 'Genral Knowledge':
+                        triviaURL = generalknowledgeURL;
+                        break;
+                    case 'Computers':
+                        triviaURL = computerURL;
+                        break;
+                    case 'Math':
+                        triviaURL = mathURL;
+                        break;
     }
     fetchTrivia();
     startTimer();
