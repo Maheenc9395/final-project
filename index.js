@@ -24,12 +24,30 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 
 
-const EasyURL = "https://opentdb.com/api.php?amount=10&difficulty=easy";
-const MediumURL = "https://opentdb.com/api.php?amount=10&difficulty=medium";
-const HardURL = "https://opentdb.com/api.php?amount=10&difficulty=hard";
+
+
+// Show the first lightbox as soon as the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('lightbox-1').style.display = 'flex';
+  });
+  
+  // Function to show instructions
+  function showInstructions() {
+    document.getElementById('lightbox-1').style.display = 'none';
+    document.getElementById('lightbox-2').style.display = 'flex';
+  }
+  
+  // Function to close instructions
+  function closeInstructions() {
+    document.getElementById('lightbox-2').style.display = 'none';
+  }
 
 
 
+
+  
+  
+  
 const animalURL = "https://opentdb.com/api.php?amount=10&category=27";
 const animeURL = "https://opentdb.com/api.php?amount=10&category=31";
 const cartoonURL = "https://opentdb.com/api.php?amount=10&category=32";
@@ -43,6 +61,13 @@ const generalknowledgeURL = "https://opentdb.com/api.php?amount=10&category=9";
 const computerURL = "https://opentdb.com/api.php?amount=10&category=18";
 const mathURL = "https://opentdb.com/api.php?amount=10&category=19";
 
+const EasyURL = "https://opentdb.com/api.php?amount=10&difficulty=easy";
+const MediumURL = "https://opentdb.com/api.php?amount=10&difficulty=medium";
+const HardURL = "https://opentdb.com/api.php?amount=10&difficulty=hard";
+
+
+
+
 
 
 let triviaURL;
@@ -52,23 +77,15 @@ var startTime;
 var startSeconds;
 var myVar;
 
+
+
+
+
+
+
 // Function to start the game
 function startGame() {
-    const difficulty = document.getElementById('levels').value;
-    switch (difficulty) {
-        case 'easy':
-            triviaURL = EasyURL;
-            break;
-        case 'medium':
-            triviaURL = MediumURL;
-            break;
-        case 'hard':
-            triviaURL = HardURL;
-            break;
 
-
-            
-    }
 
 
     const catagories = document.getElementById('catagories').value;
@@ -134,6 +151,26 @@ function startGame() {
                         triviaURL = mathURL;
                         break;
     }
+
+
+    const difficulty = document.getElementById('levels').value;
+    switch (difficulty) {
+        case 'easy':
+            triviaURL = EasyURL;
+            break;
+        case 'medium':
+            triviaURL = MediumURL;
+            break;
+        case 'hard':
+            triviaURL = HardURL;
+            break;
+
+
+            
+    }
+
+
+   
     fetchTrivia();
     startTimer();
 }
@@ -269,5 +306,3 @@ function answerQuestion(correctAnswer) {
     displayNewImage(correctAnswer);
 }
 // Initial image display
-
-
