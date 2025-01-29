@@ -85,8 +85,11 @@ var myVar;
 
 // Function to start the game
 function startGame() {
-
-
+    // Disable the select options and remove them from view
+    document.getElementById('catagories').disabled = true;
+    document.getElementById('levels').disabled = true;
+    document.getElementById('catagories').style.display = 'none';
+    document.getElementById('levels').style.display = 'none';
 
     const catagories = document.getElementById('catagories').value;
     switch (catagories) {
@@ -174,7 +177,6 @@ function startGame() {
     fetchTrivia();
     startTimer();
 }
-
 function startTimer() {
     startTime = new Date();
     startSeconds = startTime.getSeconds();
